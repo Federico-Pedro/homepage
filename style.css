@@ -1,6 +1,187 @@
+:root{
+    --black: #1A1A1F;
+    --blue: #1A2551;
+    --purple: #4B3B65;
+    --grey: #4C576B;
+    --white: rgb(240, 240, 240);
+}
+
+@font-face {
+    font-family: 'yuji-mai';
+    src: url('./assets/Yuji_Mai/YujiMai-Regular.ttf');
+  }
+
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+    overflow-x: hidden;
+    /*box-sizing: border-box;*/
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: var(--black);
+    overflow: hidden;
+}
+
+.main-container{
+    width: 60vw;
+    overflow: hidden;
+    background-color: var(--grey);
+}
+
+.header{
+    height: 50vh;
+    width: 100%;
+    background-color: var(--blue);
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+    overflow: hidden;
     
+}
+
+.header-pic{
+    height: 75%;
+    width: auto;
+    overflow: hidden;
+    margin: 15px 10px;
+    margin-right: 15px;
+    box-shadow: 8px 3px 10px var(--black);
+}
+
+.profile-pic{
+    height: 100%;
+    width: auto;
+}
+
+.about{
+    width: 50%;
+    height: 65%;
+    background-color: var(--grey);
+    color: var(--white);
+    font-family: yuji-mai;
+    box-shadow: 5px 2px 10px var(--black);
+    padding: 5px;
+    padding-left: 25px;
+    margin-left: -25px;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    overflow: hidden;
+}
+
+.about-me{
+    font-size: 2vw;
+    overflow: hidden;
+    padding: 2px;
+    margin-bottom: 2px;
+    
+}
+
+.bio {
+    font-size: 1vw;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 3px;
+}
+
+.header-icons{
+    /*border: 1px solid black;*/
+    height: 30px;
+    width: 25%;
+    margin-left: 75%;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+   
+}
+
+.icon{
+    height: 25px;
+    width: auto;
+    
+}
+
+.projects{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    
+    
+}
+
+.projects-title{
+    font-size: 1.3rem;
+    font-family: yuji-mai;
+    color: var(--white);
+    margin: 15px 25px 0px 25px;
+}
+
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /*border: 1px solid black;*/
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--grey);
+    
+    
+}
+
+.card{
+    height: 40%;
+    width: 25%;
+    margin: 10px 15px;
+    background-color: var(--purple);
+    box-shadow: 10px 5px 10px var(--black);
+}
+
+.screenshot {
+    height: 65%;
+    width: 100%;
+    
+}
+
+.description{
+    height: 35%;
+    width: 100%;
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.description-h{
+    display: flex;
+    justify-content: space-between;
+}
+.description-title,
+.description-txt{
+    font-family: yuji-mai;
+    font-size: .75rem;
+    color: var(--black);
+}
+
+.git, .open{
+    height: 10px;
+    width: auto;
+}
+.description-txt{
+    font-size: .6rem;
+}
+
+.footer{
+    height: 30vh;
+    width: 100%;
+    background-color: var(--blue);
 }
